@@ -1,32 +1,30 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {LayoutModule} from "@angular/cdk/layout";
-import {MatToolbarModule} from "@angular/material/toolbar";
-import {MatBadgeModule} from "@angular/material/badge";
-import {MatCheckboxModule} from "@angular/material/checkbox";
-import {MatSidenavModule} from "@angular/material/sidenav";
-import {MatIconModule} from "@angular/material/icon";
-import {MatListModule} from "@angular/material/list";
-import {MatPaginatorModule} from "@angular/material/paginator";
-
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatInputModule } from '@angular/material/input'; 
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
 
 
 @NgModule({
+
   exports: [
-    BrowserAnimationsModule,
-    LayoutModule,
     MatToolbarModule,
-    MatBadgeModule,
-    MatCheckboxModule,
+    MatButtonModule,
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSlideToggleModule,
     MatPaginatorModule,
-  ],
-  imports: [
-    CommonModule
+    MatTableModule
   ]
+  
 })
 export class AppMaterialModule { }

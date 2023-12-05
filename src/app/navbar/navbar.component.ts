@@ -9,15 +9,16 @@ import { map, shareReplay } from 'rxjs/operators';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
- /* private breakpointObserver = inject(BreakpointObserver);*/
+  // private breakpointObserver = inject(BreakpointObserver);
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
       shareReplay()
     );
-  constructor(private breakpointObserver: BreakpointObserver) {}
-  logout():void {
 
-  }
+    constructor(private breakpointObserver: BreakpointObserver){}
+    logout(): void {
+      
+    }
 }
