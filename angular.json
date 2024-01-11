@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "identity-management:build:production"
+              "buildTarget": "identity-management:build:production"
             },
             "development": {
-              "browserTarget": "identity-management:build:development"
+              "buildTarget": "identity-management:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "identity-management:build"
+            "buildTarget": "identity-management:build"
           }
         },
         "test": {
