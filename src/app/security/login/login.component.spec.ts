@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LdapListComponent } from './LdapListComponent';
+import { LoginComponent } from './login.component';
 
-describe('LdapListComponent', () => {
-  let component: LdapListComponent;
-  let fixture: ComponentFixture<LdapListComponent>;
+describe('LoginComponent', () => {
+  let component: LoginComponent;
+  let fixture: ComponentFixture<LoginComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [LdapListComponent]
+      declarations: [LoginComponent]
     });
-    fixture = TestBed.createComponent(LdapListComponent);
+    fixture = TestBed.createComponent(LoginComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
